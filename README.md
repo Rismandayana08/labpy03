@@ -171,8 +171,115 @@ Setelah loop selesai, baris ini mencetak total laba yang telah dihitung selama 8
 
 Secara keseluruhan, program ini berfungsi untuk menghitung dan menampilkan laba per bulan dan total laba setelah periode 8 bulan.
 
+# Latihan 3 
+```python
+def atm():
+  saldo = 10000000000
 
+  while True:
+    print("Saldo saat ini: Rp", saldo)
+    print("1. Tarik Uang")
+    print("2. Keluar")
+    pilihan = int(input("Pilih menu (1/2): "))
 
+    if pilihan == 1:
+      jumlah_tarik = int(input("Masukkan jumlah penarikan: "))
+      if jumlah_tarik <= saldo:
+        saldo -= jumlah_tarik
+        print("Penarikan berhasil!")
+      else:
+        print("Saldo tidak mencukupi!")
+    elif pilihan == 2:
+      print("Terima kasih telah menggunakan ATM!")
+      break
+    else:
+      print("Pilihan tidak valid!")
+
+atm()
+```
+
+# Output
+```Markdown
+Saldo saat ini: Rp 10000000000
+1. Tarik Uang
+2. Keluar
+Pilih menu (1/2): 1
+Masukkan jumlah penarikan: 500000
+Penarikan berhasil!
+Saldo saat ini: Rp 9999500000
+1. Tarik Uang
+2. Keluar
+Pilih menu (1/2): 2
+Terima kasih telah menggunakan ATM!
+```
+
+# Penjelasan Kerja 3 dan OutPout
+
+Definisi Fungsi:
+
+python
+def atm():
+Fungsi atm() didefinisikan untuk mengelola seluruh operasi ATM. Fungsi ini akan menjalankan proses penarikan uang dan pengecekan saldo secara berulang sampai pengguna memilih untuk keluar.
+
+Inisialisasi Saldo:
+
+python
+saldo = 10000000000
+Variabel saldo diinisialisasi dengan nilai Rp10.000.000.000 sebagai saldo awal yang tersedia di akun pengguna.
+
+Loop Utama:
+
+python
+while True:
+Loop while True digunakan untuk menjalankan proses ATM secara terus-menerus sampai pengguna memilih untuk keluar. Ini adalah loop tak terbatas yang hanya akan berhenti jika diperintahkan dengan break.
+
+Menampilkan Menu dan Saldo:
+
+python
+print("Saldo saat ini: Rp", saldo)
+print("1. Tarik Uang")
+print("2. Keluar")
+pilihan = int(input("Pilih menu (1/2): "))
+Baris ini menampilkan saldo saat ini dan pilihan menu kepada pengguna. Pengguna diminta untuk memilih antara opsi 1 (Tarik Uang) dan opsi 2 (Keluar).
+
+Proses Penarikan Uang:
+
+```python
+if pilihan == 1:
+    jumlah_tarik = int(input("Masukkan jumlah penarikan: "))
+    if jumlah_tarik <= saldo:
+        saldo -= jumlah_tarik
+        print("Penarikan berhasil!")
+    else:
+        print("Saldo tidak mencukupi!")
+```
+Jika pengguna memilih opsi 1, program akan meminta jumlah uang yang ingin ditarik. Jika jumlah yang diminta lebih kecil atau sama dengan saldo yang tersedia, saldo akan dikurangi dengan jumlah tersebut dan pesan sukses ditampilkan. Jika tidak, pesan kesalahan akan muncul.
+
+Proses Keluar:
+
+```python
+elif pilihan == 2:
+    print("Terima kasih telah menggunakan ATM!")
+    break
+```
+Jika pengguna memilih opsi 2, program akan menampilkan pesan terima kasih dan menghentikan loop dengan break, yang mengakhiri fungsi atm().
+
+Pilihan Tidak Valid:
+
+```python
+else:
+    print("Pilihan tidak valid!")
+```
+Jika pengguna memasukkan pilihan selain 1 atau 2, program akan menampilkan pesan bahwa pilihan tidak valid.
+
+Pemanggilan Fungsi:
+
+```python
+atm()
+```
+Baris terakhir dari kode ini memanggil fungsi atm() untuk memulai program ATM dan menjalankan prosesnya.
+
+Program ini adalah simulasi sederhana dari sebuah mesin ATM yang memungkinkan pengguna untuk menarik uang dan memeriksa saldo mereka. Seluruh proses diatur dalam loop yang terus berjalan sampai pengguna memilih untuk keluar.
 
 
 
