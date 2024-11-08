@@ -69,3 +69,115 @@ Untuk setiap iterasi dari loop:
 Program mencetak bilangan acak untuk data ke-1, data ke-2, dan seterusnya.
 Setelah itu, kata "Selesai"dicetak.
 Kata "Selesai" akan dicetak setelah setiap bilangan acak. Jika Anda hanya ingin kata "Selesai" muncul sekali di akhir setelah seluruh loop selesai, Anda harus memindahkan print("Selesai") ke luar loop.
+
+# Latihan 2
+```python
+# Inisialisasi laba per bulan
+laba = 0
+total_laba = 0
+
+# Loop untuk bulan 1 sampai 8
+for bulan in range(1, 9):
+    # Menentukan laba berdasarkan bulan
+    if bulan in [1, 2]:  # Bulan 1 dan 2
+        laba = 0
+    elif bulan in [3, 4]:  # Bulan 3 dan 4
+        laba = 10000000.0
+    elif bulan in [5, 6, 7]:  # Bulan 5, 6, dan 7
+        laba = 50000000.0
+    elif bulan == 8:  # Bulan 8
+        laba = 200000000.0
+    
+    # Menampilkan laba per bulan
+    print(f"laba bulan ke- {bulan} sebesar: {laba}")
+    
+    # Menambahkan laba ke total laba
+    total_laba += laba
+
+# Menampilkan total laba
+print(f"Total laba adalah: {total_laba}")
+```
+# Output 2
+````markdown
+laba bulan ke- 1 sebesar: 0
+laba bulan ke- 2 sebesar: 0
+laba bulan ke- 3 sebesar: 10000000.0
+laba bulan ke- 4 sebesar: 10000000.0
+laba bulan ke- 5 sebesar: 50000000.0
+laba bulan ke- 6 sebesar: 50000000.0
+laba bulan ke- 7 sebesar: 50000000.0
+laba bulan ke- 8 sebesar: 200000000.0
+Total laba adalah: 370000000.0
+````
+
+# Penjelasan Kerja 1 Dan Output
+Tentu, mari kita jelaskan lebih rinci program ini yang menghitung laba bulanan selama periode 8 bulan:
+
+Inisialisasi Variabel:
+
+python
+laba = 0
+total_laba = 0
+Dua variabel ini diatur pada awal program. laba digunakan untuk menyimpan laba bulanan, dan total_laba digunakan untuk menghitung jumlah total laba selama 8 bulan.
+
+Loop untuk Bulan 1 sampai 8:
+
+python
+for bulan in range(1, 9):
+Baris ini mendefinisikan loop for yang akan berjalan dari bulan 1 hingga bulan 8. range(1, 9) menghasilkan urutan angka dari 1 sampai 8.
+
+Menentukan Laba Berdasarkan Bulan:
+
+```python
+if bulan in [1, 2]:
+    laba = 0
+elif bulan in [3, 4]:
+    laba = 10000000.0
+elif bulan in [5, 6, 7]:
+    laba = 50000000.0
+elif bulan == 8:
+    laba = 200000000.0
+```
+Ini adalah blok kode yang menggunakan if-elif-else untuk menentukan laba berdasarkan bulan:
+
+Untuk bulan 1 dan 2, laba diatur menjadi 0.
+
+Untuk bulan 3 dan 4, laba diatur menjadi Rp10.000.000.
+
+Untuk bulan 5, 6, dan 7, laba diatur menjadi Rp50.000.000.
+
+Untuk bulan 8, laba diatur menjadi Rp200.000.000.
+
+Menampilkan Laba per Bulan:
+
+```python
+print(f"laba bulan ke- {bulan} sebesar: {laba}")
+```
+Baris ini mencetak laba untuk setiap bulan yang sedang dihitung dalam loop.
+
+Menambahkan Laba ke Total Laba:
+
+```python
+total_laba += laba
+```
+Setelah laba bulanan ditentukan, nilai laba ditambahkan ke variabel total_laba untuk menghitung total laba secara keseluruhan.
+
+Menampilkan Total Laba:
+
+```python
+print(f"Total laba adalah: {total_laba}")
+```
+Setelah loop selesai, baris ini mencetak total laba yang telah dihitung selama 8 bulan.
+
+Secara keseluruhan, program ini berfungsi untuk menghitung dan menampilkan laba per bulan dan total laba setelah periode 8 bulan.
+
+
+
+
+
+
+
+
+
+
+
