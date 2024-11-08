@@ -63,13 +63,7 @@ Mencetak Kata "Selesai" Setiap Kali dalam Loop:
 print("Selesai")
 Setelah mencetak hasil untuk setiap bilangan acak, perintah ini mencetak kata "Selesai". Karena perintah ini berada di dalam loop, kata "Selesai" akan dicetak setelah setiap iterasi (setiap kali bilangan acak dicetak).
 
-Penjelasan Output
-Untuk setiap iterasi dari loop:
-
-Program mencetak bilangan acak untuk data ke-1, data ke-2, dan seterusnya.
-Setelah itu, kata "Selesai"dicetak.
-Kata "Selesai" akan dicetak setelah setiap bilangan acak. Jika Anda hanya ingin kata "Selesai" muncul sekali di akhir setelah seluruh loop selesai, Anda harus memindahkan print("Selesai") ke luar loop.
-# Penjelasan Outpu 1
+# Penjelasan Output 1
 Untuk setiap iterasi dari loop:
 
 Program mencetak bilangan acak untuk data ke-1, data ke-2, dan seterusnya.
