@@ -213,7 +213,7 @@ Pilih menu (1/2): 2
 Terima kasih telah menggunakan ATM!
 ```
 
-# Penjelasan Kerja 3 dan OutPout
+# Penjelasan Kerja 3 dan OutPut
 
 Definisi Fungsi:
 
